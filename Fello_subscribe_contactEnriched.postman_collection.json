@@ -1,0 +1,52 @@
+{
+  "info": {
+    "_postman_id": "bd10c269-0077-4429-be9b-58de5e16cd2b",
+    "name": "Fello",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "5409390"
+  },
+  "item": [
+    {
+      "name": "Subscribe to ContactEnriched",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "{{apiKey}}",
+            "type": "text"
+          },
+          {
+            "key": "",
+            "value": "",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"eventType\": \"ContactEnriched\",\n    \"url\": \"https://webhook.site/5b72c4b5-9d2f-4a31-97dd-31d456a8c193\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.fello.ai/public/v1/webhooks",
+          "protocol": "https",
+          "host": [
+            "api",
+            "fello",
+            "ai"
+          ],
+          "path": [
+            "public",
+            "v1",
+            "webhooks"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

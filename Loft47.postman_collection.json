@@ -1,0 +1,193 @@
+{
+  "info": {
+    "_postman_id": "b5d46287-ff60-44dc-8547-031bf01b247e",
+    "name": "Loft47",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "5409390"
+  },
+  "item": [
+    {
+      "name": "Get Brokerages",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{accessToken}}",
+            "type": "text"
+          },
+          {
+            "key": "Accept",
+            "value": "application/vnd.api+json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://api.staging.loft47.com/v1/brokerages",
+          "protocol": "https",
+          "host": [
+            "api",
+            "staging",
+            "loft47",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "brokerages"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Validate Credentials",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"user\": {\n        \"email\": \"tracy+apibroker@loft47.com\",\n        \"password\": \"1Password47!\"\n    }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.staging.loft47.com/v1/sign_in",
+          "protocol": "https",
+          "host": [
+            "api",
+            "staging",
+            "loft47",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "sign_in"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Deal",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/vnd.api+json",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{accessToken}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://api.staging.loft47.com/v1/brokerages/230",
+          "protocol": "https",
+          "host": [
+            "api",
+            "staging",
+            "loft47",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "brokerages",
+            "230"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Deals Accesses",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{accessToken}}",
+            "type": "text"
+          },
+          {
+            "key": "Accept",
+            "value": "application/vnd.api+json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://api.staging.loft47.com/v1/brokerages/230/deals/13073/accesses",
+          "protocol": "https",
+          "host": [
+            "api",
+            "staging",
+            "loft47",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "brokerages",
+            "230",
+            "deals",
+            "13073",
+            "accesses"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Search Opportunities Prod",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{accessToken}}"
+          },
+          {
+            "key": "api-key",
+            "value": "8Mp5uzjKWKGPR2Ok6GSl4OLGrDTA2BEIBNBd58XSgUocQ4ap",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"sort\": {\n        // \"sortFields\": [\"created_at\"],\n        \"sortFields\": [\"updated_at\"],\n        // \"sortOrder\": [\"asc\"]\n        \"sortOrder\": [\"desc\"]\n    }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://partners.api.kw.com/opportunities/orgs/2178776/opportunities/search",
+          "protocol": "https",
+          "host": [
+            "partners",
+            "api",
+            "kw",
+            "com"
+          ],
+          "path": [
+            "opportunities",
+            "orgs",
+            "2178776",
+            "opportunities",
+            "search"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

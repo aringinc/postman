@@ -1,0 +1,80 @@
+{
+  "info": {
+    "_postman_id": "9a07bf16-9842-44c2-9b5f-1a2cc8670541",
+    "name": "Sisu",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "5409390"
+  },
+  "item": [
+    {
+      "name": "Get All Agents",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "{{authorization}}"
+          },
+          {
+            "key": "accept",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "https://api.sisu.co/api/v1/team/get-team-agents",
+          "protocol": "https",
+          "host": [
+            "api",
+            "sisu",
+            "co"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "team",
+            "get-team-agents"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Transactions Pagination v2",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "{{authorization}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"team_id\":15572,\n    \"agent_id\": 78933,\n    \"filter\": {\n      \"page\": 1,\n      \"per_page\": 1000,\n      \"order_by\": \"updated_ts\",\n      \"order_direction\": \"desc\"\n    }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://my.sisu.co/api/v2/team/get-team-clients",
+          "protocol": "https",
+          "host": [
+            "my",
+            "sisu",
+            "co"
+          ],
+          "path": [
+            "api",
+            "v2",
+            "team",
+            "get-team-clients"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
