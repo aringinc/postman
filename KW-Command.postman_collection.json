@@ -386,7 +386,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n    \"token\": \"eyJhbGciOiJSUzI1NiIsImtpZCI6InRjS25JemV4RjBuYmlaSi15MHRLaDV6RVpaTV9SUzI1NiIsInBpLmF0bSI6InRiNWYifQ.eyJzY29wZSI6Im9wZW5pZCBwcm9maWxlIHJlYWRfdGFzayByZWFkX2NvbnRhY3Rfc2V0dGluZyByZWFkX29yZ2FuaXphdGlvbiB3cml0ZV90YXNrIHJlYWRfdXNlciB3cml0ZV9jdXN0b21fZmllbGQgcmVhZF9jb250YWN0IHdyaXRlX3JlY3J1aXQgd3JpdGVfY29udGFjdCBvcmc6YWdlbnQiLCJjbGllbnRfaWQiOiJkYy03NnppbmRhYTZ3ZndmdmhieDRmdnhxNGxyIiwiaXNzIjoiaHR0cHM6Ly9hdXRoLmt3LmNvbSIsImlhdCI6MTczODA2MDIzNSwianRpIjoibkt3dHVWdG11OXE1ZklrMHNwdzFqWCIsImF1ZCI6Imh0dHBzOi8vcGFydG5lcnMuYXBpLmt3LmNvbSIsInN1YiI6IjgxNzI3MSIsImVtYWlsX3ZlcmlmaWVkIjoiVFJVRSIsImVtYWlsIjoieWVnb3J\"\n}",
+          "raw": "{\n    \"token\": \"{{jwt}}\"\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -501,7 +501,7 @@
           },
           {
             "key": "api-key",
-            "value": "Gx4VO3EodvwovbRX6LzsMA78H0JVlBZFQW1WbJXTjJTXX5Oa",
+            "value": "{{apiKey}}",
             "type": "text",
             "disabled": true
           },
@@ -548,7 +548,7 @@
         "header": [
           {
             "key": "x-api-key",
-            "value": "Q059FeZtRracNZ8u4bpsEjHEOR0Qtwnl",
+            "value": "{{apiKey}}",
             "type": "text",
             "disabled": true
           },

@@ -6,7 +6,9 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const jwtRe = /eyJ[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+/g;
+// Standard JWT + common truncated / nested-in-JSON cases in Postman raw bodies
+const jwtRe =
+  /eyJ[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\.[A-Za-z0-9._-]*|eyJ[A-Za-z0-9_-]+\.[A-Za-z0-9._-]*/g;
 
 function redactJwt(s) {
   if (typeof s !== "string") return s;
@@ -49,7 +51,8 @@ function processRequest(r) {
   if (!r || typeof r !== "object") return;
   if (Array.isArray(r.header)) {
     for (const h of r.header) {
-      if (!h || h.disabled || typeof h.value !== "string") continue;
+      if (!h || typeof h.value !== "string") continue;
+      // Redact even disabled headers — they still ship secrets in exports.
       const k = String(h.key || "");
       if (/^authorization$/i.test(k)) {
         h.value = /^Bearer\s+/i.test(h.value) ? "Bearer {{accessToken}}" : "{{authorization}}";

@@ -155,7 +155,7 @@
           },
           {
             "key": "api-key",
-            "value": "8Mp5uzjKWKGPR2Ok6GSl4OLGrDTA2BEIBNBd58XSgUocQ4ap",
+            "value": "{{apiKey}}",
             "type": "text",
             "disabled": true
           }
