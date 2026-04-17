@@ -1,0 +1,982 @@
+{
+  "info": {
+    "_postman_id": "4ed96283-1ba7-4933-809b-292264e79631",
+    "name": "KW Command",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "5409390"
+  },
+  "item": [
+    {
+      "name": "Get Contact",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "api-key",
+            "value": "Gx4VO3EodvwovbRX6LzsMA78H0JVlBZFQW1WbJXTjJTXX5Oa",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOlsiaHR0cHM6Ly9zdHMuZGV2aHViLmt3LmNvbSJdLCJjbGllbnRfaWQiOiJHeDRWTzNFb2R2d292YlJYNkx6c01BNzhIMEpWbEJaRlFXMVdiSlhUakpUWFg1T2EiLCJlbWFpbCI6ImFwcHNAYXBpbmF0aW9uLmNvbSIsImV4cCI6MTc2OTgwMDg5MSwiaWF0IjoxNzY5NzcyMDkxLCJpc3MiOiJodHRwczovL3N0cy5kZXZodWIua3cuY29tIiwianRpIjoiYzVmYjE1NTItZTI0Ny00ZWM5LWJhMWMtNDIwYTQ5NWFjOWM3IiwibmJmIjoxNzY5NzcyMDkxLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIHJlYWRfdGFzayByZWFkX2NvbnRhY3Rfc2V0dGluZyByZWFkX29yZ2FuaXphdGlvbiB3cml0ZV90YXNrIHdyaXRlX2N1c3RvbV9maWVsZCByZWFkX2NvbnRhY3Qgd3JpdGVfY29udGFjdCBvcmc6MjM1MjM3NyBvcmdfdHlwZV9pZDo3Iiwic3ViIjoiODE3MjcxIn0.NwEHWNrMa7TiNZ9qck5xvQRrBEEh4OGysy07MgnAthCZ3khkmxKt7Ux3hzaSQo5zpItetN0X9dZa0K0Kepdv_IcwFV2xEsngbb8AV7AxoXeYgSrBmM1unOQZ6Jqx2Delf7WTaHWbHzZte5c8Sy2ivPwtTbY2DvR__J-ELbXRoarNqdAl7tXu88dWNqH8Tr4mSz9odwmTgDMYYcbWY7UWNbQend18YyzqqbWWfxtp_EzpslxOW7ZaeT_9E39pK7HBAkJuuXBlDreMFJg-K7kZKbGhCpux6l2Q2N0RP6iXNUImHvQTVtV-nRin5SOLrOsHwTFheUZLfYlLkgzlnaW0pyljDpqYM7tQVBXZxYGe4LhvK_kB0uvjlnZFNXZdm9Ldc7ppxm1F4tdMlgsiR_CA_B0fW2tqrPtGCQhxeQPUF9_a9Qvl2VTl2TaDUYpHNrBdJwRvvQBYGh1WGldUnpVZ7ZuvUGnIcDcesqymmOydPV0aoFQCLjcVQ-jIino_t-b9",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://partners.api.kw.com/plus/v3/contacts/697a7db04ebf8de012782d06",
+          "protocol": "https",
+          "host": [
+            "partners",
+            "api",
+            "kw",
+            "com"
+          ],
+          "path": [
+            "plus",
+            "v3",
+            "contacts",
+            "697a7db04ebf8de012782d06"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get accounts",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "API-Key",
+            "value": "Ak3B6RWhG0DY5AAQqzdgVIPUbwuAf1FA",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{kwAccessToken}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://kw-prod-prod.apigee.net/v2/pno/people/agent/orgs",
+          "protocol": "https",
+          "host": [
+            "kw-prod-prod",
+            "apigee",
+            "net"
+          ],
+          "path": [
+            "v2",
+            "pno",
+            "people",
+            "agent",
+            "orgs"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get agents",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "API-Key",
+            "value": "Ak3B6RWhG0DY5AAQqzdgVIPUbwuAf1FA",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{kwAccessToken}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://kw-prod-prod.apigee.net/v2/pno/orgs/team/people",
+          "protocol": "https",
+          "host": [
+            "kw-prod-prod",
+            "apigee",
+            "net"
+          ],
+          "path": [
+            "v2",
+            "pno",
+            "orgs",
+            "team",
+            "people"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Agent request",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "API-Key",
+            "value": "6tc4ZycghLvfEnKMvpkUEBycsge2qg2C",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer WHMew42pqit00mNJ8MZ8EE4CF5qS",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://kw-prod-prod.apigee.net/v2/pno/orgs/team/people",
+          "protocol": "https",
+          "host": [
+            "kw-prod-prod",
+            "apigee",
+            "net"
+          ],
+          "path": [
+            "v2",
+            "pno",
+            "orgs",
+            "team",
+            "people"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Contact Created NEW",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "3YLMCXXW5U7UQMQ6NSEKVFNR2V9B3"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"type\": \"contact.update\",\n    \"source\": \"kwri\",\n    \"productId\": \"APIN_GOOGLE_TEAMS\",\n    \"time\": \"2023-06-07T07:02:17.460Z\",\n    \"payload\": {\n        \"type\": \"contact\",\n        \"action\": \"UPDATED\",\n        \"data\": {\n            \"attributes\": {\n                \"contactId\": \"647ef70ae2245bd64f39bdee\",\n                \"name\": {\n                    \"preferred\": \"Aida Rosenta\",\n                    \"prefix\": \"\",\n                    \"first\": \"Aida\",\n                    \"middle\": \"\",\n                    \"last\": \"Rosenta\",\n                    \"suffix\": \"\",\n                    \"legal\": \"Aida Rosenthal\"\n                },\n                \"owner\": {\n                    \"type\": \"TEAM\",\n                    \"id\": \"1001766236\",\n                    \"name\": \"API Nation Test Team\"\n                },\n                \"contactTypes\": [\n                    \"CONTACT\"\n                ],\n                \"permissions\": [\n                    {\n                        \"grantedTo\": \"817271\",\n                        \"grantedBy\": \"1001766236\",\n                        \"grantedToName\": \"817271 QA\",\n                        \"type\": \"CLAIMED\"\n                    }\n                ],\n                \"inLeadRoute\": false,\n                \"author\": {\n                    \"createdBy\": \"817271\",\n                    \"updatedBy\": \"817271\"\n                },\n                \"createdAt\": \"2023-06-06T09:06:18.247Z\",\n                \"updatedAt\": \"2023-06-07T07:02:17.034Z\"\n            },\n            \"oldValues\": {\n                \"name\": {\n                    \"preferred\": \"Aida Rosentha\",\n                    \"last\": \"Rosentha\"\n                },\n                \"updatedAt\": \"2023-06-06T20:00:51.656Z\"\n            },\n            \"newValues\": {\n                \"name\": {\n                    \"preferred\": \"Aida Rosenta\",\n                    \"last\": \"Rosenta\"\n                },\n                \"updatedAt\": \"2023-06-07T07:02:17.034Z\"\n            }\n        }\n    },\n    \"eventId\": \"APIN_GOOGLE_TEAMS-contact-8271274883485043\"\n}"
+        },
+        "url": {
+          "raw": "https://webhooks-stg.apination.com/kw-command/contacts",
+          "protocol": "https",
+          "host": [
+            "webhooks-stg",
+            "apination",
+            "com"
+          ],
+          "path": [
+            "kw-command",
+            "contacts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Contact",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "API-Key",
+            "value": "PHVHyq4hKbaKkuRguFRAUpAMGkjxXisG",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer WHGKWxYAhnCnqeGKpE4dZ53jnMCb",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": {\n        \"first\": \"Carolyn\",\n        \"last\": \"Henson\"\n    },\n    \"emails\": {\n        \"primary\": {\n            \"email\": \"ch@apin.com\",\n            \"label\": \"WORK\"\n        }\n    }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://kw-prod-prod.apigee.net/async/contacts",
+          "protocol": "https",
+          "host": [
+            "kw-prod-prod",
+            "apigee",
+            "net"
+          ],
+          "path": [
+            "async",
+            "contacts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Contact",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOlsiaHR0cHM6Ly9zdHMuZGV2aHViLmt3LmNvbSJdLCJjbGllbnRfaWQiOiI4TXA1dXpqS1dLR1BSMk9rNkdTbDRPTEdyRFRBMkJFSUJOQmQ1OFhTZ1VvY1E0YXAiLCJlbWFpbCI6ImFwcHNAYXBpbmF0aW9uLmNvbSIsImV4cCI6MTc3MTM1ODE0OCwiaWF0IjoxNzcxMzI5MzQ3LCJpc3MiOiJodHRwczovL3N0cy5kZXZodWIua3cuY29tIiwianRpIjoiNDAxNzc0NDEtOTZlNC00NTk3LTliOGEtZjVjNzEyNmMwNzgxIiwibmJmIjoxNzcxMzI5MzQ3LCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIHJlYWRfdGFzayByZWFkX29yZ2FuaXphdGlvbiB3cml0ZV90YXNrIHdyaXRlX2N1c3RvbV9maWVsZCByZWFkX2NvbnRhY3Qgd3JpdGVfY29udGFjdCByZWFkX29wcG9ydHVuaXR5IHNlYXJjaF9vcHBvcnR1bml0eSBvcmc6MjE3ODc3NiBvcmdfdHlwZV9pZDo5Iiwic3ViIjoiODE3MjcxIn0.KLTAS0v_JtfQXR6X-urbHXjZJTPKi4D7CYhDtJ6wYqVwM2FbnATAAyJFCPcLFWHczD1jaA3qzQBZoRqMpRQ62EegJG2QB3lqARkcEhlBPIzONrXjTDdQ0T78B2D8wQTITIZG3zIDkNVwqmIVHG6S1bVyW2Ui_py48WbDR-BYVf-3fDKHFQISQEZqH-DaVIkhxAqwb84Kdn9JvbdTSDQcVV9R_QUYEnkvhlc7RpyKydKenvJ_4M1xSPOi--9SxJttT3-3-AZYbvhCNHQ_OBoajqVLteUPublAVfh9spZdf6vDfqcudERhjxegniQK6Iyt7ms6QbfcuQdd-Jk0dmQvG8DITKwKfchPKTvjM2LTzJmCGomi-1ZjpGIKw5zGTw-Klc91UlDj-v-usyT3bzyrEqjnl2HCvvqqSAIp6V2bXpPO_HdXEpGmBsUtjBHVPSYiad-a8aaAtzzHRkkEk3h4QK-oMGYaXT-AELW3NgokMJ9cRolJ9ny1OX1DTMS7e9es",
+            "type": "text"
+          },
+          {
+            "key": "API-Key",
+            "value": "yrc1KIb1VI3QfGtvbEbeykcoxrdgKGVq",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": {\n        \"first\": \"Carolyn\",\n        \"last\": \"Henson\"\n    },\n    \"addresses\": {\n        \"primaryAddress\": {\n            \"addressLine1\": \"1231\",\n            \"city\": \"12334\",\n            \"state\": \"\",\n            \"zipCode\": \"\"\n        }\n    },\n    \"emails\": {\n        \"primary\": {\n            \"email\": \"ch@apin.com\",\n            \"label\": \"WORK\"\n        },\n        \"others\": [\n            {\n                \"email\": \"ch@apin.com\",\n                \"label\": \"WORK\"\n            }\n        ]\n    },\n    \"tags\": [{\"label\": \"a\"}]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://kw-prod-prod.apigee.net/async/contacts/65b0fd909e290e3baaa9b765",
+          "protocol": "https",
+          "host": [
+            "kw-prod-prod",
+            "apigee",
+            "net"
+          ],
+          "path": [
+            "async",
+            "contacts",
+            "65b0fd909e290e3baaa9b765"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Contact Created NEW",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "3YLMCXXW5U7UQMQ6NSEKVFNR2V9B3"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"type\": \"contact.update\",\n    \"source\": \"kwri\",\n    \"productId\": \"APIN_GOOGLE_TEAMS\",\n    \"time\": \"2023-06-07T07:02:17.460Z\",\n    \"payload\": {\n        \"type\": \"contact\",\n        \"action\": \"UPDATED\",\n        \"data\": {\n            \"attributes\": {\n                \"contactId\": \"647ef70ae2245bd64f39bdee\",\n                \"name\": {\n                    \"preferred\": \"Aida Rosenta\",\n                    \"prefix\": \"\",\n                    \"first\": \"Aida\",\n                    \"middle\": \"\",\n                    \"last\": \"Rosenta\",\n                    \"suffix\": \"\",\n                    \"legal\": \"Aida Rosenthal\"\n                },\n                \"owner\": {\n                    \"type\": \"TEAM\",\n                    \"id\": \"1001766236\",\n                    \"name\": \"API Nation Test Team\"\n                },\n                \"contactTypes\": [\n                    \"CONTACT\"\n                ],\n                \"permissions\": [\n                    {\n                        \"grantedTo\": \"817271\",\n                        \"grantedBy\": \"1001766236\",\n                        \"grantedToName\": \"817271 QA\",\n                        \"type\": \"CLAIMED\"\n                    }\n                ],\n                \"inLeadRoute\": false,\n                \"author\": {\n                    \"createdBy\": \"817271\",\n                    \"updatedBy\": \"817271\"\n                },\n                \"createdAt\": \"2023-06-06T09:06:18.247Z\",\n                \"updatedAt\": \"2023-06-07T07:02:17.034Z\"\n            },\n            \"oldValues\": {\n                \"name\": {\n                    \"preferred\": \"Aida Rosentha\",\n                    \"last\": \"Rosentha\"\n                },\n                \"updatedAt\": \"2023-06-06T20:00:51.656Z\"\n            },\n            \"newValues\": {\n                \"name\": {\n                    \"preferred\": \"Aida Rosenta\",\n                    \"last\": \"Rosenta\"\n                },\n                \"updatedAt\": \"2023-06-07T07:02:17.034Z\"\n            }\n        }\n    },\n    \"eventId\": \"APIN_GOOGLE_TEAMS-contact-8271274883485043\"\n}"
+        },
+        "url": {
+          "raw": "https://webhooks-stg.apination.com/kw-command/contacts",
+          "protocol": "https",
+          "host": [
+            "webhooks-stg",
+            "apination",
+            "com"
+          ],
+          "path": [
+            "kw-command",
+            "contacts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Contact Created Local",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "zA8FBwhUZjRJdZEWp45kcbF3aKEwBwf",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\"type\" : \"contact.create\",\n        \"source\" : \"kwri\",\n        \"productId\" : \"APINATION\",\n        \"time\" : \"2025-08-06T17:43:16.132Z\",\n    \"payload\": {\n            \"type\" : \"contact\",\n            \"action\" : \"CREATED\",\n            \"data\" : {\n                \"attributes\" : {\n                    \"contactId\" : \"689394340dfa3afc2a473621\",\n                    \"name\" : {\n                        \"first\" : \"Felix\",\n                        \"last\" : \"Castillo\",\n                        \"legal\" : \"Felix Castillo\",\n                        \"preferred\" : \"Felix Castillo\"\n                    },\n                    \"owner\" : {\n                        \"type\" : \"AGENT\",\n                        \"id\" : \"817271\",\n                        \"name\" : \"Yegor Heiz\"\n                    },\n                    \"contactTypes\" : [\n                        \"CONTACT\"\n                    ],\n                    \"permissions\" : [\n\n                    ],\n                    \"inLeadRoute\" : false,\n                    \"author\" : {\n                        \"createdBy\" : \"817271\",\n                        \"updatedBy\" : \"817271\"\n                    },\n                    \"createdAt\" : \"2025-08-06T17:43:16.034Z\",\n                    \"updatedAt\" : \"2025-08-06T17:43:16.034Z\",\n                    \"addedByAuthorType\" : \"AGENT\"\n                },\n                \"contact\" : {\n                    \"owner\" : {\n                        \"type\" : \"AGENT\",\n                        \"id\" : \"817271\",\n                        \"name\" : \"Yegor Heiz\"\n                    },\n                    \"author\" : {\n                        \"createdBy\" : \"817271\",\n                        \"updatedBy\" : \"817271\"\n                    },\n                    \"name\" : {\n                        \"first\" : \"Felix\",\n                        \"last\" : \"Castillo\",\n                        \"legal\" : \"Felix Castillo\",\n                        \"preferred\" : \"Felix Castillo\"\n                    },\n                    \"emails\" : {\n                        \"primary\" : {\n                            \"email\" : \"felixbcastillo@dayrep.com\",\n                            \"label\" : \"WORK\"\n                        },\n                        \"others\" : [\n\n                        ]\n                    },\n                    \"phones\" : {\n                        \"primary\" : {\n                            \"ISOPhoneNumber\" : \"+15129286183\",\n                            \"label\" : \"PERSONAL\"\n                        },\n                        \"others\" : [\n\n                        ]\n                    },\n                    \"neighborhoods\" : {\n                        \"others\" : [\n\n                        ]\n                    },\n                    \"addresses\" : {\n                        \"others\" : [\n\n                        ]\n                    },\n                    \"metaData\" : {\n                        \"inputChannel\" : \"API\"\n                    },\n                    \"_id\" : \"689394340dfa3afc2a473621\",\n                    \"contactTypes\" : [\n                        \"CONTACT\"\n                    ],\n                    \"createdAt\" : \"2025-08-06T17:43:16.034Z\",\n                    \"customFields\" : [\n\n                    ],\n                    \"inLeadRoute\" : false,\n                    \"permissions\" : [\n\n                    ],\n                    \"relationships\" : [\n\n                    ],\n                    \"socialAccounts\" : [\n\n                    ],\n                    \"teamId\" : \"2178776\",\n                    \"updatedAt\" : \"2025-08-06T17:43:16.034Z\",\n                    \"source\" : {\n\n                    },\n                    \"tags\" : [\n\n                    ]\n                }\n            }\n        },\n    \"eventId\": \"APIN_GOOGLE_TEAMS-contact-8271274883485043\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/kw-command/contacts",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "kw-command",
+            "contacts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Revoke Authorization",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Basic R3g0Vk8zRW9kdndvdmJSWDZMenNNQTc4SDBKVmxCWkZRVzFXYkpYVGpKVFhYNU9hOlJ4cDRzVE5CYUpIeVlEWGxZY01hWFlZOXBwSERPYnNvZFM2VXF4QnNUSjg5eTFxRnR3bUlrRHZnM3dpM0F1WDc=",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"token\": \"eyJhbGciOiJSUzI1NiIsImtpZCI6InRjS25JemV4RjBuYmlaSi15MHRLaDV6RVpaTV9SUzI1NiIsInBpLmF0bSI6InRiNWYifQ.eyJzY29wZSI6Im9wZW5pZCBwcm9maWxlIHJlYWRfdGFzayByZWFkX2NvbnRhY3Rfc2V0dGluZyByZWFkX29yZ2FuaXphdGlvbiB3cml0ZV90YXNrIHJlYWRfdXNlciB3cml0ZV9jdXN0b21fZmllbGQgcmVhZF9jb250YWN0IHdyaXRlX3JlY3J1aXQgd3JpdGVfY29udGFjdCBvcmc6YWdlbnQiLCJjbGllbnRfaWQiOiJkYy03NnppbmRhYTZ3ZndmdmhieDRmdnhxNGxyIiwiaXNzIjoiaHR0cHM6Ly9hdXRoLmt3LmNvbSIsImlhdCI6MTczODA2MDIzNSwianRpIjoibkt3dHVWdG11OXE1ZklrMHNwdzFqWCIsImF1ZCI6Imh0dHBzOi8vcGFydG5lcnMuYXBpLmt3LmNvbSIsInN1YiI6IjgxNzI3MSIsImVtYWlsX3ZlcmlmaWVkIjoiVFJVRSIsImVtYWlsIjoieWVnb3J\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://partners.api.kw.com/idp/revoke",
+          "protocol": "https",
+          "host": [
+            "partners",
+            "api",
+            "kw",
+            "com"
+          ],
+          "path": [
+            "idp",
+            "revoke"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Contact Created NEW 2",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "Kf8Jh9Evg3yQyN2uPj7lRbSmVd1p2Q4w"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"type\": \"contact.update\",\n    \"source\": \"kwri\",\n    \"productId\": \"APIN_GSHTS\",\n    \"time\": \"2025-07-25T10:01:47.805Z\",\n    \"payload\": {\n        \"type\": \"contact\",\n        \"action\": \"UPDATED\",\n        \"data\": {\n            \"attributes\": {\n                \"contactId\": \"67e31cd7014046b8a16d0623\",\n                \"name\": {\n                    \"first\": \"Tiffany\",\n                    \"last\": \"Estrada\",\n                    \"legal\": \"Tiffany Estrada\",\n                    \"preferred\": \"Tiffany Estrada\"\n                },\n                \"owner\": {\n                    \"type\": \"AGENT\",\n                    \"id\": \"628523\",\n                    \"name\": \"Michael Steber\"\n                },\n                \"contactTypes\": [\n                    \"CONTACT\"\n                ],\n                \"author\": {\n                    \"createdBy\": \"628523\",\n                    \"updatedBy\": \"628523\"\n                },\n                \"addresses\": {\n                    \"others\": []\n                },\n                \"metaData\": {\n                    \"inputChannel\": \"API\"\n                }\n            },\n            \"oldValues\": {\n                \"name\": {\n                    \"preferred\": \"Tiffany Estrada\",\n                    \"first\": \"Tiffany\"\n                },\n                \"updatedAt\": \"2025-07-24T13:46:52.847Z\"\n            },\n            \"newValues\": {\n                \"name\": {\n                    \"preferred\": \"Tiffani Estrada\",\n                    \"first\": \"Tiffani\"\n                },\n                \"updatedAt\": \"2025-07-25T10:01:47.650Z\"\n            }\n        }\n    },\n    \"eventId\": \"APIN_GSHTS-contact-15689756506237870\"\n}"
+        },
+        "url": {
+          "raw": "https://webhooks.apination.com/kw-command/contacts",
+          "protocol": "https",
+          "host": [
+            "webhooks",
+            "apination",
+            "com"
+          ],
+          "path": [
+            "kw-command",
+            "contacts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Refresh Token",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "authorization",
+            "value": "Basic R3g0Vk8zRW9kdndvdmJSWDZMenNNQTc4SDBKVmxCWkZRVzFXYkpYVGpKVFhYNU9hOlJ4cDRzVE5CYUpIeVlEWGxZY01hWFlZOXBwSERPYnNvZFM2VXF4QnNUSjg5eTFxRnR3bUlrRHZnM3dpM0F1WDc=",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"refresh_token\": \"367f0f69-2fdc-4e0d-ad5f-44878630801d\",\n    \"grant_type\": \"refresh_token\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://partners.api.kw.com/idp/refresh",
+          "protocol": "https",
+          "host": [
+            "partners",
+            "api",
+            "kw",
+            "com"
+          ],
+          "path": [
+            "idp",
+            "refresh"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Activities",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "api-key",
+            "value": "Gx4VO3EodvwovbRX6LzsMA78H0JVlBZFQW1WbJXTjJTXX5Oa",
+            "type": "text",
+            "disabled": true
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOlsiaHR0cHM6Ly9zdHMuZGV2aHViLmt3LmNvbSJdLCJjbGllbnRfaWQiOiJHeDRWTzNFb2R2d292YlJYNkx6c01BNzhIMEpWbEJaRlFXMVdiSlhUakpUWFg1T2EiLCJlbWFpbCI6ImFwcHNAYXBpbmF0aW9uLmNvbSIsImV4cCI6MTc3MDA1NTMzMCwiaWF0IjoxNzcwMDI2NTI5LCJpc3MiOiJodHRwczovL3N0cy5kZXZodWIua3cuY29tIiwianRpIjoiZWY2OThjZDYtOGYwMS00ZmU0LTlmNjQtZjJhNTRmNzVmM2FjIiwibmJmIjoxNzcwMDI2NTI5LCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIHJlYWRfdGFzayByZWFkX2NvbnRhY3Rfc2V0dGluZyByZWFkX29yZ2FuaXphdGlvbiB3cml0ZV90YXNrIHdyaXRlX2N1c3RvbV9maWVsZCByZWFkX2NvbnRhY3Qgd3JpdGVfY29udGFjdCBvcmc6MjM1MjM3NyBvcmdfdHlwZV9pZDo3Iiwic3ViIjoiODE3MjcxIn0.Ouxotk2_KumnUl1piYIpUy_pd7Nl-bOtt54to-3lOrQ7ozTHbpcbHowY03rxqLt0hZ7zudV4xJh6_qE4vxoNuXNfIFiRf21VjE0UWT_nRLQCPqzqGX64UvXGm63FOkWGQmrTN7Sswy7ivSXkQRJNWKQIRZpH8sliaBtpIAiWhyuZFBb_Z9VAixp4-5ZjtKSyN2LY9_3kGnBhZInWzSdaxX66KeMzNPFwgUgH736RTirVWtCBt58XPZa5hqqn_Pwt7rTKGGU4VqMrSCDwfxUgQK8N4Vh2IZTVWbiomY4CFkwPAQ0UrE7i0PZBxaCWeS_rYl63_kob5kNJQHKDJF9430z_FTQPMR5XrriSdn6ioQhAAMpoAtEnmSeewjnk2LmTvgX59rAXJA5yp8-xHx6peac9zH9XUdUVpwTsMH99H8Voi9pAkJq7akRJa4LpkgxPYSrJ5pnxCVREiwzvzNCFlDS40bqhaS0nX-s7OY9yiLxpwFXeCED_TIuvrsUjJZ3y",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[{\n    \n    \"type\": \"INFO\",\n    \"body\": \"Contact was enriched successfully.\\n\\nThe property address was added (75 Easton Ln Moreland Hills, OH 44022, US).\\n\\nDNC verification details — isDoNotCall: true, verificationDate: '2025-04-22T14:36:00.000Z', source: 'InternalDoNotCallList'.\"\n}]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://partners.api.kw.com/contacts/orgs/2178776/contacts/697c902a516cbe0bcc1ca23f/activities",
+          "protocol": "https",
+          "host": [
+            "partners",
+            "api",
+            "kw",
+            "com"
+          ],
+          "path": [
+            "contacts",
+            "orgs",
+            "2178776",
+            "contacts",
+            "697c902a516cbe0bcc1ca23f",
+            "activities"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Contact",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "Q059FeZtRracNZ8u4bpsEjHEOR0Qtwnl",
+            "type": "text",
+            "disabled": true
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOlsiaHR0cHM6Ly9zdHMuZGV2aHViLmt3LmNvbSJdLCJjbGllbnRfaWQiOiJHeDRWTzNFb2R2d292YlJYNkx6c01BNzhIMEpWbEJaRlFXMVdiSlhUakpUWFg1T2EiLCJlbWFpbCI6ImFwcHNAYXBpbmF0aW9uLmNvbSIsImV4cCI6MTc3MDE1NjExNCwiaWF0IjoxNzcwMTI3MzE0LCJpc3MiOiJodHRwczovL3N0cy5kZXZodWIua3cuY29tIiwianRpIjoiNzAxNDI5NDEtNTYzMC00NGExLTg2YmYtYzk3NDg5ZWE2MjMwIiwibmJmIjoxNzcwMTI3MzE0LCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIHJlYWRfdGFzayByZWFkX2NvbnRhY3Rfc2V0dGluZyByZWFkX29yZ2FuaXphdGlvbiB3cml0ZV90YXNrIHdyaXRlX2N1c3RvbV9maWVsZCByZWFkX2NvbnRhY3Qgd3JpdGVfY29udGFjdCBvcmc6MjM1MjM3NyBvcmdfdHlwZV9pZDo3Iiwic3ViIjoiODE3MjcxIn0.VHakdG25-rpKEvz7GK7pVwjLQYvC1GDKHbpAO92g3rxb6IqNxHI2C6nKr1boGBgG1nmIsvzfGqOeEpRRKndE-Ccc6CqkQMcpP7jD0MvkWLuMX1tXJblZ26tGLUNE-DdplzGlSWMHG81Bc-YkrY3bN-PsxYiDyvsw2yG6xaPkHbSQ5idupGqBT-pYJDAHQVHDUtVbYBosk-YwxtpVhlaSl142wXV1W4hTHPo68M0THuPgdtXAOqFKuHXrikbNnpCSbYX4SPgA3cCJw4doy-0zokyfTHf7B6SoHu_Mk7e7qEOquwxlf19tiimnhNEoQLqUjDtdziqCRGXfCQ9Bm7poMp42ptyAaS1AcmRdmqqAyIQ0DcRcM6_g1gI_l7aMfpSDfuDyOZhIiGTD_tjEce8x03JNhv8g0tw10NhAAO-69QIn6IvSxsQNTQx2vWBYhM8wEhE9dDKEwNLeFMSeuf9PayN5oiJ8L1xVW72pRSt5hMve-5KjHmUSLFNp-3Vje3hx",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Ronnie  Barrett0\",\n    \"phone\": \"+13347097000\",\n    \"email\": \"ronniembarretttt0@dayrep.com\",\n    \"emailStatus\": \"Invalid\",\n    \"recordStatus\": \"Marketing\",\n    \"crmFields\": {\n        \"source\": \"696e91743efbfbfb1df9da1c\"\n    }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://partners.api.kw.com/contacts/orgs/2352377/contact",
+          "protocol": "https",
+          "host": [
+            "partners",
+            "api",
+            "kw",
+            "com"
+          ],
+          "path": [
+            "contacts",
+            "orgs",
+            "2352377",
+            "contact"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Search Contact By Id",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOlsiaHR0cHM6Ly9zdHMuZGV2aHViLmt3LmNvbSJdLCJjbGllbnRfaWQiOiI4TXA1dXpqS1dLR1BSMk9rNkdTbDRPTEdyRFRBMkJFSUJOQmQ1OFhTZ1VvY1E0YXAiLCJlbWFpbCI6ImFwcHNAYXBpbmF0aW9uLmNvbSIsImV4cCI6MTc3MTk3Mjg5MywiaWF0IjoxNzcxOTQ0MDkzLCJpc3MiOiJodHRwczovL3N0cy5kZXZodWIua3cuY29tIiwianRpIjoiNzUyMjRiOGUtMGM0OC00MDhiLTg2OTgtOWUzY2UyOGFhNWQ2IiwibmJmIjoxNzcxOTQ0MDkzLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIHJlYWRfdGFzayByZWFkX29yZ2FuaXphdGlvbiB3cml0ZV90YXNrIHdyaXRlX2N1c3RvbV9maWVsZCByZWFkX2NvbnRhY3Qgd3JpdGVfY29udGFjdCByZWFkX29wcG9ydHVuaXR5IHNlYXJjaF9vcHBvcnR1bml0eSBvcmc6MjE3ODc3NiBvcmdfdHlwZV9pZDo5Iiwic3ViIjoiODE3MjcxIn0.lh_M4gIMXExWlxJo4_iVMB2TzSIMh94ndFd3bKEMSnanjZmi-u-lLnlSZc1_EPId0COITehJwGHdRSagtjlC5YwlJdrOMGdR5YZqpADmjIrm5--2Dt0z9CQr73l-c6PDyyNNz6eGZ4_wTPxCvEnFv9bv9N8iqCXA7Fi_ymtD4tZNMk9rVB1ZB4ti86eXzy4-yZqLh4yAySA9OUIlIpCKoo1blR4LVj7pHgJIUaaFc9ImGSQkSUwSmOEmDvKIHDsJSidw30jxsZJ1IEgzk_3dAH1AJT3ymn9O708cJJpuMSIE-BgxHKdFvvhW7YpyX5fWs3Jc5JxLdQ2wGxsdy4oQGFlMWJfm_vgnTUPloVXM9PVEJ0t4OAoE6YEuogKcCIRfZRk4T6eRlPr6oi6cr8vaUWikdw9w_x9WC8H2JA9MmHtswZYEElRDu2FHzzV_h3T98GcucSGvc5edcmmf0x_kVWGIR7i6vPbuCX_38TSQmh8FpM9mYKLAqUCcMa2WqnUQ",
+            "type": "text"
+          },
+          {
+            "key": "api-key",
+            "value": "Gx4VO3EodvwovbRX6LzsMA78H0JVlBZFQW1WbJXTjJTXX5Oa",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"query\":{\"filters\":{\"id\":[{\"pattern\":\"includes_all\",\"value\":[\"6424524fcc1813e328a5eaa7\", \"66a09420876248905ff0966c\"]}]}},\"pagination\":{\"max\":500,\"offset\":0},\n\n    \"sort\": {\n        \"sortFields\": [\"modified\"],\n        \"sortOrder\": \"asc\"\n    }\n\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://partners.api.kw.com/contacts/orgs/2178776/contacts/search",
+          "protocol": "https",
+          "host": [
+            "partners",
+            "api",
+            "kw",
+            "com"
+          ],
+          "path": [
+            "contacts",
+            "orgs",
+            "2178776",
+            "contacts",
+            "search"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Contact By ID",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOlsiaHR0cHM6Ly9zdHMuZGV2aHViLmt3LmNvbSJdLCJjbGllbnRfaWQiOiJHeDRWTzNFb2R2d292YlJYNkx6c01BNzhIMEpWbEJaRlFXMVdiSlhUakpUWFg1T2EiLCJlbWFpbCI6ImFwcHNAYXBpbmF0aW9uLmNvbSIsImV4cCI6MTc3MDMzMTg5MiwiaWF0IjoxNzcwMzAzMDkyLCJpc3MiOiJodHRwczovL3N0cy5kZXZodWIua3cuY29tIiwianRpIjoiMjEzZTM4NmItMzFmOC00ODE4LWJmMzQtMmJkYjkyYjFlOTc5IiwibmJmIjoxNzcwMzAzMDkyLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIHJlYWRfdGFzayByZWFkX2NvbnRhY3Rfc2V0dGluZyByZWFkX29yZ2FuaXphdGlvbiB3cml0ZV90YXNrIHdyaXRlX2N1c3RvbV9maWVsZCByZWFkX2NvbnRhY3Qgd3JpdGVfY29udGFjdCBvcmc6MjM1MjM3NyBvcmdfdHlwZV9pZDo3Iiwic3ViIjoiODE3MjcxIn0.E7Fa0BeUtU99Yf8KYDH9Hu-9ECw6yp6wuFBP-TctHgp4FPGB0iJVSmmEef_j-TNP8fcmYPqfTyxg_22ErGhPoJQO01ZMS8HXd_myUaKrfeGLsl99KAnFPuDdIpsA_ZbHPlV8c-3GiTxr0PQRc1yCMR6MH0jfnzJxA5B1arehBFrDqMZXlzlgShD6QV4feAC0sPD2ZGnYnRXOgOHi8QEpsjImcD7A_m5uwAcSppQVn8drLHK10Q-96IybztthlFXMwwuxHodEva69z9lmJyvU1YsbdTtRj-M1-Dejwhw9qK8-4jn-IZk5dHbRKmAB1HRtXJqRk9pbtRV9eyi4iRJZqiHhENklcpu-d1CZwkHyh9zX0cjjei02gXrQJOu4KGzFyNzO-cQdxJssSWxpG6r5OAiteENs4x5_TD4PpW-8ITi669zkLAClPHZQlCwMBsj7YvZYOUu2pVc_WpORfVh1XbMen67zI6BrXiI0I8I9ERieGYh2GD0VOu8TLJKwk4Fv",
+            "type": "text"
+          },
+          {
+            "key": "api-key",
+            "value": "Gx4VO3EodvwovbRX6LzsMA78H0JVlBZFQW1WbJXTjJTXX5Oa",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://partners.api.kw.com/contacts/orgs/2352377/contacts/6421d96d5bf598fedf6b0925",
+          "protocol": "https",
+          "host": [
+            "partners",
+            "api",
+            "kw",
+            "com"
+          ],
+          "path": [
+            "contacts",
+            "orgs",
+            "2352377",
+            "contacts",
+            "6421d96d5bf598fedf6b0925"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Search Contact By Email",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOlsiaHR0cHM6Ly9zdHMuZGV2aHViLmt3LmNvbSJdLCJjbGllbnRfaWQiOiJHeDRWTzNFb2R2d292YlJYNkx6c01BNzhIMEpWbEJaRlFXMVdiSlhUakpUWFg1T2EiLCJlbWFpbCI6ImFwcHNAYXBpbmF0aW9uLmNvbSIsImV4cCI6MTc3MDg0MzgyMywiaWF0IjoxNzcwODE1MDIyLCJpc3MiOiJodHRwczovL3N0cy5kZXZodWIua3cuY29tIiwianRpIjoiYjk5ZGQxMGQtNDA2ZC00NDZjLWI5MjUtMTQ5ZTBlYjE2Mzk5IiwibmJmIjoxNzcwODE1MDIyLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIHJlYWRfdGFzayByZWFkX2NvbnRhY3Rfc2V0dGluZyByZWFkX29yZ2FuaXphdGlvbiB3cml0ZV90YXNrIHdyaXRlX2N1c3RvbV9maWVsZCByZWFkX2NvbnRhY3Qgd3JpdGVfY29udGFjdCBvcmc6MjE3ODc3NiBvcmdfdHlwZV9pZDo5Iiwic3ViIjoiODE3MjcxIn0.YaV7UxhtDpC8xrNYijAi1ZMDCQCpzmH1PSODLjnEBTgyjqeiAlGXhW6VkUNLp4HE3JXn9PC5hCW0MMSYv4OmUliyNLyPfjnkdX6K0dQNIBD1SEsCZjbeq16He0qLCgq9isaaIl-PcwWNOdNkmO76Pv9vAGUeGUOvZQ0H2-MPXBqtNTB6u5sImY-4RmWqC1u9lHUjEznJ7Zn3SD3LGo-26PAk4i3lF1qEp03QZHk7Q1RspMbgbHqVVmuiv-GbiWhOzF0l3-tBtCwCxKJgCjcJKSzmK7aMbqlUIlyTiwgFdXMa0R0p6YdnYNb7bP-HyJNwIaxCd15y1938L_-APTQHf7GAC3ALfCKuyipUzwYmkfNONCYETzhyO58N5864aJEHft6LYVl6jFwZLKRz95RMbl0GhluNdM3jizG3fbXFvSPG8811knLHQs9bgeWcGcDtTmgvUM_y-KapKrc4iynT9b_wmtrG73E56FWLCcuth0-B4cyETQHiVUwexu2uv2bM",
+            "type": "text"
+          },
+          {
+            "key": "api-key",
+            "value": "Gx4VO3EodvwovbRX6LzsMA78H0JVlBZFQW1WbJXTjJTXX5Oa",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\\\"query\\\":{\\\"primaryEmail\\\":[{\\\"pattern\\\":\\\"contains\\\",\\\"value\\\":\\\"ddhh7788@api.com\\\"}]},\\\"fields\\\":[\\\"id\\\",\\\"source\\\",\\\"owner\\\",\\\"author\\\",\\\"name\\\",\\\"emails\\\",\\\"permissions\\\",\\\"phones\\\",\\\"neighborhoods\\\",\\\"addresses\\\",\\\"job\\\",\\\"branding\\\",\\\"customFields\\\",\\\"relationships\\\",\\\"socialAccounts\\\",\\\"personalInfo\\\",\\\"referralDetail\\\",\\\"lastInteractionDates\\\",\\\"tags\\\",\\\"createdAt\\\",\\\"updatedAt\\\",\\\"contactTypes\\\",\\\"sourceId\\\",\\\"tagIds\\\",\\\"smartplanIds\\\",\\\"archivedDate\\\"],\\\"pagination\\\":{\\\"max\\\":500,\\\"offset\\\":0}}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://partners.api.kw.com/plus/v3/contacts/search",
+          "protocol": "https",
+          "host": [
+            "partners",
+            "api",
+            "kw",
+            "com"
+          ],
+          "path": [
+            "plus",
+            "v3",
+            "contacts",
+            "search"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Search Opportunities",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{kwAccessToken}}"
+          },
+          {
+            "key": "api-key",
+            "value": "8Mp5uzjKWKGPR2Ok6GSl4OLGrDTA2BEIBNBd58XSgUocQ4ap",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"sort\": {\n        \"sortFields\": [\"created_at\"],\n        // \"sortFields\": [\"updated_at\"],\n        \"sortOrder\": [\"asc\"]\n        // \"sortOrder\": [\"desc\"]\n    }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://partners.api.kw.com/opportunities/orgs/2352377/opportunities/search",
+          "protocol": "https",
+          "host": [
+            "partners",
+            "api",
+            "kw",
+            "com"
+          ],
+          "path": [
+            "opportunities",
+            "orgs",
+            "2352377",
+            "opportunities",
+            "search"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Search Opportunities Personal",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{kwPersonalAccessToken}}"
+          },
+          {
+            "key": "api-key",
+            "value": "Gx4VO3EodvwovbRX6LzsMA78H0JVlBZFQW1WbJXTjJTXX5Oa",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"pagination\": {\n        \"max\": 100,\n        \"offset\": 0\n    },\n    \"sort\": {\n        // \"sortFields\": [\"created_at\"],\n        \"sortFields\": [\"updated_at\"],\n        \"sortOrder\": [\"ASC\"]\n        // \"sortOrder\": [\"DESC\"]\n    },\n    \"query\": {\n        \"updatedAt\": {\n            \"pattern\": \"from\",\n            \"value\": \"1900-01-01T00:00:00.000Z\"\n        }\n    }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://partners.api.kw.com/opportunities/orgs/2178776/opportunities/search",
+          "protocol": "https",
+          "host": [
+            "partners",
+            "api",
+            "kw",
+            "com"
+          ],
+          "path": [
+            "opportunities",
+            "orgs",
+            "2178776",
+            "opportunities",
+            "search"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Opportunity By ID",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{kwAccessToken}}"
+          },
+          {
+            "key": "api-key",
+            "value": "8Mp5uzjKWKGPR2Ok6GSl4OLGrDTA2BEIBNBd58XSgUocQ4ap",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://partners.api.kw.com/opportunities/orgs/2178776/opportunities/12776412",
+          "protocol": "https",
+          "host": [
+            "partners",
+            "api",
+            "kw",
+            "com"
+          ],
+          "path": [
+            "opportunities",
+            "orgs",
+            "2178776",
+            "opportunities",
+            "12776412"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Opportunity By ID Personal",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "8Mp5uzjKWKGPR2Ok6GSl4OLGrDTA2BEIBNBd58XSgUocQ4ap",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{kwPersonalAccessToken}}"
+          }
+        ],
+        "url": {
+          "raw": "https://partners.api.kw.com/opportunities/orgs/2178776/opportunities/12812522",
+          "protocol": "https",
+          "host": [
+            "partners",
+            "api",
+            "kw",
+            "com"
+          ],
+          "path": [
+            "opportunities",
+            "orgs",
+            "2178776",
+            "opportunities",
+            "12812522"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Team Info",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{kwAccessToken}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://partners.api.kw.com/plus/v2/pno/orgs/team",
+          "protocol": "https",
+          "host": [
+            "partners",
+            "api",
+            "kw",
+            "com"
+          ],
+          "path": [
+            "plus",
+            "v2",
+            "pno",
+            "orgs",
+            "team"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Agent Info",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{kwPersonalAccessToken}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://partners.api.kw.com/plus/v2/pno/people/agent",
+          "protocol": "https",
+          "host": [
+            "partners",
+            "api",
+            "kw",
+            "com"
+          ],
+          "path": [
+            "plus",
+            "v2",
+            "pno",
+            "people",
+            "agent"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Agents of Team",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{kwAccessToken}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://partners.api.kw.com/plus/v2/pno/orgs/team/people",
+          "protocol": "https",
+          "host": [
+            "partners",
+            "api",
+            "kw",
+            "com"
+          ],
+          "path": [
+            "plus",
+            "v2",
+            "pno",
+            "orgs",
+            "team",
+            "people"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
